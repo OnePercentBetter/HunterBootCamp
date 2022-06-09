@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> replaceElements(vector<int>& arr) {
+        int previous= -1;
+        for(int i=arr.size()-1;i>=0;i--){
+            if(arr[i] > previous){
+                int temp = arr[i];
+                arr[i] = previous;
+                previous = temp;
+            }else{
+                arr[i] = previous;
+            }
+        }
+        return arr;
+    }
+};
