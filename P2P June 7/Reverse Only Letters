@@ -1,3 +1,7 @@
+Time Complexity: O(n^2)
+Edge cases: If all elements weren't in the alphabet, if there's a forward slash element or double forward slash. 
+Hints: Because certain elements have to stay in place, we have to reverse around them. Is there a way we can tackle both front and back of a string 
+simultaneously? Two-pointers? Stacks?
 class Solution {
 public:
     string reverseOnlyLetters(string s) {
