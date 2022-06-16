@@ -25,10 +25,10 @@ public:
 		while (i<path.length()-1{
 			int count = 0;
 			while (i<path.length()-1 && path[i] == '.'){
-				++countDot;
+				++count;
 				i++;
 			}
-			if (countDot>  0){
+			if (count>  0){
 				if ((i == path.length()-1 || path[i] == '/')) {
 					if (count == 1) {
 					}
